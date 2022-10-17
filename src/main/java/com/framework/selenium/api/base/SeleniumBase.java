@@ -48,6 +48,7 @@ public class SeleniumBase extends Reporter implements Browser, Element  {
 		String val = "";
 		try {
 			val = ele.getAttribute(attributeValue);
+			System.out.println("Dummy values");
 		} catch (WebDriverException e) {
 			reportStep("Attribue value not able to fetch :" + e.getMessage(), "info");
 		}
